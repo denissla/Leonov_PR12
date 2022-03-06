@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Leonov_PR12.MainPage">
+    <AbsoluteLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="31" />
+                <ColumnDefinition Width="25" />
+                <ColumnDefinition Width="25" />
+                <ColumnDefinition Width="25" />
+                <ColumnDefinition Width="25" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="37" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="40" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <BoxView Color="Red" Grid.Column="0" Grid.Row="3" />
+            <BoxView Color="Blue" Grid.Column="1" Grid.Row="3" />
+            <BoxView Color="Fuchsia" Grid.Column="2" Grid.Row="3" />
+
+            <BoxView Color="Teal" Grid.Column="3" Grid.Row="3" />
+            <BoxView Color="Green" Grid.Column="4" Grid.Row="3" />
+            <BoxView Color="Maroon" Grid.Column="5" Grid.Row="3" />
+
+            <BoxView Color="Olive" Grid.Column="6" Grid.Row="3" />
+            <BoxView Color="Pink" Grid.Column="7" Grid.Row="3" />
+            <BoxView Color="Yellow" Grid.Column="8" Grid.Row="3" />
+
+            <BoxView Color="Navy" Grid.Column="9" Grid.Row="3" />
+        </Grid>
+        <Button Text="Нажмите на кнопку для вывода чисел Фибоначчи" Clicked="OnButtonClicked" AbsoluteLayout.LayoutBounds="50, 200, 300, 70" 
+                BackgroundColor="Black" BorderColor="Aqua" BorderWidth="5" TextColor="White"/>
+        <Label x:Name="lbl" Text=""  FontSize="Large" TextColor="White" AbsoluteLayout.LayoutBounds="10, 150"
+                RelativeLayout.XConstraint = "{ConstraintExpression Type=RelativeToParent,
+                Property=Width, Factor=0.5, Constant=-50}"
+                RelativeLayout.YConstraint = "{ConstraintExpression Type=RelativeToParent, 
+                Property=Height, Factor=0.5, Constant=-150}"/>
+    </AbsoluteLayout>
+</ContentPage>
